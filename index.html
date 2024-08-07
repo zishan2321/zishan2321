@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>My Awesome Site</h1>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#cta">Get Started</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Platform</h2>
+            <p>The ultimate solution for all your needs. Discover amazing features and start your journey with us today!</p>
+            <a href="#cta" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel risus at arcu.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel risus at arcu.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel risus at arcu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Join us now and be part of our growing community. Sign up today and experience the difference!</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Follow us:</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2024 My Awesome Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan Zafar | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .btn-primary {
+            @apply bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors;
+        }
+        .section {
+            @apply py-16 px-4;
+        }
+        .section-header {
+            @apply text-3xl font-bold text-center mb-8;
+        }
+        .feature-card {
+            @apply bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">Zeeshan Zafar</h1>
+            <nav class="space-x-4">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold">Hello, I'm Zeeshan Zafar</h2>
+            <p class="mt-4 text-xl">A passionate System Engineer with 2 years of experience at Wipro.</p>
+            <a href="#contact" class="btn-primary mt-6 inline-block">Contact Me</a>
+        </div>
+    </section>
+
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-white">
+        <div class="container mx-auto">
+            <h2 class="section-header">Projects</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="feature-card fade-in">
+                    <h3 class="text-xl font-semibold">Project 1</h3>
+                    <p>Developed a robust system monitoring tool that improved performance tracking and issue resolution efficiency.</p>
+                </div>
+                <div class="feature-card fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold">Project 2</h3>
+                    <p>Implemented a cloud-based solution for data backup and recovery, reducing downtime and data loss.</p>
+                </div>
+                <div class="feature-card fade-in" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-semibold">Project 3</h3>
+                    <p>Optimized system deployment processes, leading to a 30% decrease in setup time and increased productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-blue-100">
+        <div class="container mx-auto text-center">
+            <h2 class="section-header">Contact Me</h2>
+            <p>If you'd like to get in touch or have any questions, feel free to reach out!</p>
+            <a href="mailto:zeeshan.zafar@example.com" class="btn-primary mt-4 inline-block">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Zeeshan Zafar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .btn-primary {
+            @apply bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors;
+        }
+        .section {
+            @apply py-16 px-4;
+        }
+        .section-header {
+            @apply text-3xl font-bold text-center mb-8;
+        }
+        .feature-card {
+            @apply bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .skill-item {
+            @apply bg-blue-50 p-4 rounded-lg shadow-md;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">Zeeshan Zafar</h1>
+            <nav class="space-x-4">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#skills" class="hover:underline">Skills</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold">Hello, I'm Zeeshan Zafar</h2>
+            <p class="mt-4 text-xl">A passionate System Engineer with 2 years of experience at Wipro.</p>
+            <a href="#contact" class="btn-primary mt-6 inline-block">Contact Me</a>
+        </div>
+    </section>
+
+   
+                    <!-- Skills Section -->
+                    <section id="skills" class="skills-section">
+                        <div class="container">
+                            <h2 class="section-header">Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <h3 class="skill-title">System Administration</h3>
+                                    <p class="skill-description">Proficient in managing and maintaining IT infrastructure, including servers, networks, and databases.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Cloud Computing</h3>
+                                    <p class="skill-description">Experienced in cloud services such as AWS and Azure, with skills in deploying and managing cloud resources.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Troubleshooting</h3>
+                                    <p class="skill-description">Skilled in diagnosing and resolving technical issues promptly to minimize downtime and improve system reliability.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Scripting</h3>
+                                    <p class="skill-description">Proficient in writing scripts for automation and system management tasks using Python and Bash.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Networking</h3>
+                                    <p class="skill-description">Experienced in configuring and managing network devices, including routers, switches, and firewalls.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Project Management</h3>
+                                    <p class="skill-description">Ability to manage projects from inception to completion, ensuring timely delivery and meeting project requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </body>
+                </html>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Skills Section</title>
+                    <link rel="stylesheet" href="styles.css">
+                </head>
+                <body>
+                    <!-- Skills Section -->
+                    <section id="skills" class="skills-section">
+                        <div class="container">
+                            <h2 class="section-header">Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <h3 class="skill-title">System Administration</h3>
+                                    <p class="skill-description">Proficient in managing and maintaining IT infrastructure, including servers, networks, and databases.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Cloud Computing</h3>
+                                    <p class="skill-description">Experienced in cloud services such as AWS and Azure, with skills in deploying and managing cloud resources.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Troubleshooting</h3>
+                                    <p class="skill-description">Skilled in diagnosing and resolving technical issues promptly to minimize downtime and improve system reliability.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Scripting</h3>
+                                    <p class="skill-description">Proficient in writing scripts for automation and system management tasks using Python and Bash.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Networking</h3>
+                                    <p class="skill-description">Experienced in configuring and managing network devices, including routers, switches, and firewalls.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Project Management</h3>
+                                    <p class="skill-description">Ability to manage projects from inception to completion, ensuring timely delivery and meeting project requirements.</p>
+                                </div>
+                                <!-- New Skill -->
+                                <div class="skill-card">
+                                    <h3 class="skill-title">Database Management</h3>
+                                    <p class="skill-description">Proficient in designing, implementing, and maintaining databases with experience in SQL and NoSQL systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </body>
+                </html>
+                            
